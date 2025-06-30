@@ -57,7 +57,7 @@ ROOT_URLCONF = 'fee_mgmt.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates"],   # <== this is correct
+        'DIRS': [BASE_DIR / "templates"],  # ✅ Only this should remain
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -68,6 +68,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'fee_mgmt.wsgi.application'
 
