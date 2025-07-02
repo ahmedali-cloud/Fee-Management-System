@@ -1,6 +1,9 @@
 # students/views.py
 
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
-def student_home(request):
-    return render(request, 'students/home.html')  # Make sure this is correct
+@login_required
+def home_view(request):
+    return render(request, 'home.html')
+

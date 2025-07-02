@@ -9,3 +9,4 @@ urlpatterns = [
     path('fees/', include('fees.urls')),
     path('students/', include('students.urls')),   # ✅ ye line zaroori hai
 ]
+
