@@ -2,5 +2,5 @@
 
 from django.shortcuts import render
 
-def home_view(request):
-    return render(request, 'home.html')
+def student_home(request):
+    return render(request, 'students/home.html')  # Make sure this is correct
